@@ -132,5 +132,5 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'devanshpateldec@gmail.com'
-EMAIL_HOST_PASSWORD = 'qixm vznw lnbj ympl'
+EMAIL_HOST_PASSWORD = '' 
 DEFAULT_FROM_EMAIL = 'devanshpateldec@gmail.com'
