@@ -61,26 +61,39 @@ cd TalkOut
 pip install -r requirements.txt
 ```
 
+6. Email Configuration :
 
-6. Apply migrations:
+
+    ```python
+    EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+    EMAIL_HOST = 'smtp.gmail.com'
+    EMAIL_PORT = 587
+    EMAIL_USE_TLS = True
+    EMAIL_HOST_USER = 'your-email@gmail.com'
+    EMAIL_HOST_PASSWORD = 'your-email-password'
+    DEFAULT_FROM_EMAIL = 'your-email@gmail.com'
+    ```
+
+
+7. Apply migrations:
 ```bash
 python manage.py migrate
 ```
 
-7. Run the development server:
+8. Run the development server:
 ```bash
 python manage.py runserver
 ```
 
 
-8. Setup Celery and Start Celery Worker :
+9. Setup Celery and Start Celery Worker :
 ```bash
 celery -A project3 worker --loglevel=info
 ```
 
 
    
-9. Open your web browser and go to http://localhost:8000 to access the application.
+10. Open your web browser and go to http://localhost:8000 to access the application.
    
 ## Usage
 
